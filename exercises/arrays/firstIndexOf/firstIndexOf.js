@@ -28,16 +28,25 @@
 function firstIndexOf(haystack, needle) {
   for (let i = 0 ; i < haystack.length ; i++ ) {
     let currentValue = haystack[i];
-    console.log (currentValue);
     if (needle === currentValue) {
-      return haystack.indexOf(needle);
+      return currentValue;
+    } 
+  }
+}
+
+  /** 
+  let evaluate = 0; 
+  for (let i = 0 ; i < haystack.length ; i++ ) {
+    let currentValue = haystack[i];
+    if (needle == currentValue) {
+      return ;
     }
     else {
       return -1;
     }
   }
 }
-
+*/
 if (require.main === module) {
   console.log('Running sanity checks for firstIndexOf:');
 
