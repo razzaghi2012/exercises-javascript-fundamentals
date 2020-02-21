@@ -40,6 +40,8 @@ if (require.main === module) {
   
   console.log(countEvens([1,3,5]));
   console.log(countEvens([1,3,5])==0);
+  console.log(countEvens([2,4,6])==3);
+
 
 /**
  * debugging my own logic...
