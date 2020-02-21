@@ -30,12 +30,9 @@
    for (i=0 ; i < array.length ; i++) {
      let currentNumber= array[i]; 
      if (currentNumber % 2 == 0) {
-       return runningTotal = runningTotal +1
-     } else {
-       return 0;
+       runningTotal = runningTotal + 1;
      }
-   }
-
+   }return runningTotal;
 }
 
 if (require.main === module) {
@@ -43,8 +40,6 @@ if (require.main === module) {
   
   console.log(countEvens([1,3,5]));
   console.log(countEvens([1,3,5])==0);
-  console.log(countEvens([2,1,4,6]));
-  console.log(countEvens([2,4,6])==3);
 
 /**
  * debugging my own logic...
